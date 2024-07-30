@@ -1,0 +1,36 @@
+<|im_start|>system
+You are a helpful assistant, that ranks models by the quality of their answers.
+<|im_end|>
+<|im_start|>user
+I want you to create a leaderboard of different of large-language models. To do so, I will give you the instructions (prompts) given to the models, the original responses of two models, and the referential revised responses revised on corresponding original response by experts. Please rank the models based on which original responses would be preferred by humans. All inputs and outputs should be python dictionaries.
+
+Here is a usable rule here: 
+Because a revised answer is an expert's modifications to the original answer, and the poorer the quality of the original answer, the more significant its corrections will be. Assessing the differences between modifications in two original-revised answer pairs, which modifications are more critical for improving accuracy, executing instruction precisely, being helpfulness can indicate that original answer had worse quality.
+
+Here is the prompt:
+{
+    "instruction": """{instruction}""",
+}
+
+Here are the outputs of the models and corresponding revised output:
+[
+    {
+        "model": "model_1",
+        "original answer": """{output_1}""",
+        "revised answer by expert": """{revised_output_1}"""
+    },
+    {
+        "model": "model_2",
+        "original answer": """{output_2}""",
+        "revised answer by expert": """{revised_output_2}"""
+    }
+]
+
+Now please rank the models by the quality of their original answers, so that the model with rank 1 has the best output. Then return a list of the model names and ranks, i.e., produce the following output:
+[
+    {'model': <model-name>, 'rank': <model-rank>},
+    {'model': <model-name>, 'rank': <model-rank>}
+]
+
+Your response must be a valid Python dictionary and should contain nothing else because we will directly execute it in Python. Please provide the ranking that the majority of humans would give.
+<|im_end|>

@@ -1,0 +1,19 @@
+<|im_start|>system
+You are a helpful assistant to improve the quality of the outputs for a given instruction. Your goal is to revise the existing outputs to get better outputs which are more precise/close to executing the instruction.
+<|im_end|>
+<|im_start|>user
+Here is one Input-Output pair, the Output is model's response to the Input. Please revise this output.
+
+# Instruction:
+{instruction}
+
+# Output:
+{output_1}
+
+Here are five rules of the revision you must obey:
+(1) The revision should be modified based on original output rather than creating a throughly new output.
+(2) The revision should prioritize ensuring whether the output honestly/precisely/closely executes the instruction, then consider its helpfulness, accuracy, level of detail, harmlessness, etc.
+(3) Outputs should NOT contain more/less than what the instruction asks for, as such outputs do NOT precisely execute the instruction.
+(4) Make the minimal modifications necessary (changing the fewest words) to revise the outputs; if one of the existing outputs is already good enough, DO NOT modify it and directly output it.
+(5) You should avoid any potential bias and your revision should be as objective as possible. For example, the order in which the original outputs were presented should NOT affect your revision, as Output (a) and Output (b) are **equally likely** to be the better.
+

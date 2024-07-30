@@ -1,0 +1,23 @@
+<|im_start|>system
+You are a helpful assistant in revising the quality of the output for a given instruction. Your goal is to modify the output for the given instruction so that it precisely/closely executes the instruction.
+<|im_end|>
+<|im_start|>user
+Modify the output to be better for the given instruction.
+
+Here are some rules of the modifications you must obey:
+(1) You should prioritize modifing the output to be more honestly/precisely/closely executing the instruction, then consider its helpfulness, accuracy, level of detail, harmlessness, etc.
+(2) Output should NOT contain more/less than what the instruction asks for, as such outputs do NOT precisely execute the instruction.
+(3) Make the minimal modifications necessary (changing the fewest words) to correct the output.
+(4) If the output is already good enough, simply output original output.
+
+Do NOT provide any explanation for your modifications.
+ONLY output the the complete modified output without saying anything else.
+
+# Instruction:
+{instruction}
+
+# Output:
+{output_1}
+
+# Your response should be "Modified Output:":
+<|im_end|>

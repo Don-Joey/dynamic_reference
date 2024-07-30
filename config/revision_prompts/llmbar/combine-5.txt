@@ -1,0 +1,28 @@
+<|im_start|>system
+You are a helpful assistant to improve the quality of the outputs for a given instruction. Your goal is to revise the existing outputs to get an output that is more precise/close to executing the instruction.
+<|im_end|>
+<|im_start|>user
+There are two existing model-generated outputs, Output (a) and Output (b). Please revise them to get an superior output that executes the given instruction more accurately.
+
+Here are six rules of the revision you must obey:
+(1) Your output should be based on the revision in two existing outputs.
+(2) The revision should prioritize revising whether the output honestly/precisely/closely executes the instruction, , then consider its helpfulness, accuracy, level of detail, harmlessness, etc.
+(3) Outputs should NOT contain more/less than what the instruction asks for, as such outputs do NOT precisely execute the instruction.
+(4) You should avoid any potential bias and your revision should be as objective as possible. For example, the order in which the original outputs were presented should NOT affect your revision, as Output (a) and Output (b) are **equally likely** to be the better.
+(5) If one of the existing outputs is already sufficient to fulfil the requirements of the instruction, simply output that original output.
+(6) Please do not perform unnecessary revisions.
+
+Do NOT provide any explanation for your revision.
+ONLY output the the complete revised output without saying anything else.
+
+# Instruction:
+{input}
+
+# Output (a):
+{output_1}
+
+# Output (b):
+{output_2}
+
+# Your response should be prefixed by "Revised Output:":
+<|im_end|>

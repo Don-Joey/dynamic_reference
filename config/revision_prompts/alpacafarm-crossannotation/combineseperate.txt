@@ -1,0 +1,16 @@
+<|im_start|>user
+Below is an instruction followed by two model-generated responses. Please seperately revise the two responses to make them would be preferred by humans. Make the minimal modifications necessary (changing the fewest words) to revise the outputs. If one of the existing outputs is already good enough, simply output that original output.  
+
+Here is an instruction
+**Instruction:**{instruction};
+
+Here are two responses
+**Response 1:**{output_1}
+**Response 2:**{output_2}
+
+The first revised output is revised on **Response 1** and the second revised output is revised on **Response 2**, Please output follow below format:
+Revised (1)
+...
+Revised (2)
+... 
+<|im_end|>

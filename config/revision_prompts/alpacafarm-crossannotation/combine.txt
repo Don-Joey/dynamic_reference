@@ -1,0 +1,12 @@
+<|im_start|>user
+Below is an instruction followed by two model-generated responses. Please synthesize the strengths of two model-generated outputs to create/revise one superior output that would be preferred by humans. Output only the complete revised response.
+
+Here is an instruction
+**Instruction:**{instruction};
+
+Here are two unordered responses
+**Response 1:**{output_1}
+**Response 2:**{output_2}
+
+**Revised Response:**
+<|im_end|>

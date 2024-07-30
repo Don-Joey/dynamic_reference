@@ -1,0 +1,31 @@
+<|im_start|>system
+You are a helpful assistant, that revises models by the quality of their answers.
+<|im_end|>
+<|im_start|>user
+I want you to revise the responses of different large-language models. To do so, I will give you the instructions (prompts) given to the models, and the responses of two models. Please revise the model generated answers to make them be preferred by humans. All inputs and outputs should be python dictionaries.
+
+Here is the prompt:
+{
+    "instruction": """{instruction}""",
+}
+
+Here are the outputs of the models:
+[
+    {
+        "model": "model_1",
+        "answer": """{output_1}"""
+    },
+    {
+        "model": "model_2",
+        "answer": """{output_2}"""
+    }
+]
+
+Now please revise the outputs by the quality of their answers. Then return a list of the model names and revisions, i.e., produce the following output:
+[
+    {'model': <model-name>, 'revised answer': <revision>},
+    {'model': <model-name>, 'revised answer': <revision>}
+]
+
+Your response must be a valid Python dictionary and should contain nothing else because we will directly execute it in Python. Please provide the revision that the majority of humans would give.
+<|im_end|>
